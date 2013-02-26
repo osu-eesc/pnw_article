@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the PNW Article feature.
+ */
+
+include_once 'pnw_article.features.inc';
