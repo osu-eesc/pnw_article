@@ -33,7 +33,7 @@ function pnw_article_field_default_fields() {
           3 => '<p class="disclaimer">In all cases, <strong>follow the instructions on the pesticide label</strong>. The <em>PNW Insect Management Handbook</em> has no legal status, whereas the pesticide label is a legal document. Read the product label before making any pesticide applications.</p>',
           4 => '<p class="disclaimer"><strong>Protect pollinators:</strong> See <a href="/node/710">How to Reduce Bee Poisoning from Pesticides</a>.</p>',
           5 => '<p class="disclaimer"><strong>Note:</strong> Products are listed in alphabetical order and <em>not</em> in order of preference or superiority of pest control.</p>',
-          6 => '<p class="disclaimer"><strong>For mite identification:</strong> See <a href="/node/646">Field Characteristics of Fruit-Tree Attacking Spider Mites in the Pacific Northwest</a>.</p>',
+          6 => '<p class="disclaimer"><strong>For mite identification:</strong> See <a href="/node/646">Field Characteristics of Fruit-Tree-Attacking Spider Mites in the Pacific Northwest</a>.</p>',
         ),
         'allowed_values_function' => '',
       ),
@@ -51,7 +51,7 @@ function pnw_article_field_default_fields() {
           'module' => 'list',
           'settings' => array(),
           'type' => 'list_default',
-          'weight' => '4',
+          'weight' => '3',
         ),
         'full' => array(
           'label' => 'hidden',
@@ -212,7 +212,7 @@ function pnw_article_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '5',
+          'weight' => '4',
         ),
         'full' => array(
           'label' => 'hidden',
@@ -364,6 +364,76 @@ function pnw_article_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-article-field_section'.
+  $fields['node-article-field_section'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_section',
+      'foreign keys' => array(
+        'tid' => array(
+          'columns' => array(
+            'tid' => 'tid',
+          ),
+          'table' => 'taxonomy_term_data',
+        ),
+      ),
+      'indexes' => array(
+        'tid' => array(
+          0 => 'tid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'taxonomy',
+      'settings' => array(
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'sections',
+            'parent' => '0',
+          ),
+        ),
+      ),
+      'translatable' => '0',
+      'type' => 'taxonomy_term_reference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'article',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '8',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_section',
+      'label' => 'Section',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_select',
+        'weight' => '1',
+      ),
+    ),
+  );
+
   // Exported field: 'node-article-field_styled_title'.
   $fields['node-article-field_styled_title'] = array(
     'field_config' => array(
@@ -404,7 +474,7 @@ function pnw_article_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '2',
+          'weight' => '1',
         ),
         'full' => array(
           'label' => 'hidden',
@@ -435,7 +505,7 @@ function pnw_article_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '1',
+        'weight' => '7',
       ),
     ),
   );
@@ -447,6 +517,7 @@ function pnw_article_field_default_fields() {
   t('Body');
   t('Check to include standard disclaimers.');
   t('Latest revision');
+  t('Section');
   t('Styled title');
 
   return $fields;
