@@ -56,7 +56,7 @@ function pnw_article_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '5',
+          'weight' => '6',
         ),
       ),
       'display' => array(
@@ -90,7 +90,7 @@ function pnw_article_strongarm() {
         ),
         'article_subpages_eva_subpages' => array(
           'default' => array(
-            'weight' => '5',
+            'weight' => '4',
             'visible' => TRUE,
           ),
           'search_result' => array(
@@ -104,7 +104,7 @@ function pnw_article_strongarm() {
         ),
         'section_contents_toc_level2' => array(
           'default' => array(
-            'weight' => '6',
+            'weight' => '5',
             'visible' => TRUE,
           ),
           'search_result' => array(
@@ -132,7 +132,7 @@ function pnw_article_strongarm() {
         ),
         'related_images_related_image' => array(
           'default' => array(
-            'weight' => '0',
+            'weight' => '1',
             'visible' => TRUE,
           ),
         ),

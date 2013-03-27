@@ -51,7 +51,7 @@ function pnw_article_field_default_fields() {
           'module' => 'list',
           'settings' => array(),
           'type' => 'list_default',
-          'weight' => '3',
+          'weight' => '2',
         ),
         'full' => array(
           'label' => 'hidden',
@@ -169,7 +169,7 @@ function pnw_article_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '2',
+        'weight' => '3',
       ),
     ),
   );
@@ -212,7 +212,7 @@ function pnw_article_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '4',
+          'weight' => '3',
         ),
         'full' => array(
           'label' => 'hidden',
@@ -250,7 +250,7 @@ function pnw_article_field_default_fields() {
           'rows' => '10',
         ),
         'type' => 'text_textarea',
-        'weight' => '4',
+        'weight' => '5',
       ),
     ),
   );
@@ -359,7 +359,7 @@ function pnw_article_field_default_fields() {
           'year_range' => '-3:+3',
         ),
         'type' => 'date_text',
-        'weight' => '3',
+        'weight' => '4',
       ),
     ),
   );
@@ -408,7 +408,7 @@ function pnw_article_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '8',
+          'weight' => '13',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -429,7 +429,7 @@ function pnw_article_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => '1',
+        'weight' => '2',
       ),
     ),
   );
@@ -474,7 +474,7 @@ function pnw_article_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '1',
+          'weight' => '0',
         ),
         'full' => array(
           'label' => 'hidden',
@@ -505,7 +505,7 @@ function pnw_article_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '7',
+        'weight' => '1',
       ),
     ),
   );

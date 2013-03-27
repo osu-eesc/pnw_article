@@ -21,7 +21,7 @@ function pnw_article_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Options',
-    'weight' => '6',
+    'weight' => '7',
     'children' => array(
       0 => 'field_article_options',
       1 => 'metatags',
@@ -49,7 +49,7 @@ function pnw_article_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => '',
-    'weight' => '2',
+    'weight' => '12',
     'children' => array(
       0 => 'field_author',
       1 => 'field_revision_date',
